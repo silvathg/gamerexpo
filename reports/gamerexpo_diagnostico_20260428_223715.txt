@@ -1,0 +1,152 @@
+GamerExpo v1 1.1 | Relatório gerado em 28/04/2026 22:37:15
+Diagnóstico de hardware com foco em entendimento de jogos que a máquina tende a rodar.
+Atenção: esta análise é heurística e não substitui benchmark real por jogo.
+
+
+==============================================================================
+SISTEMA OPERACIONAL
+==============================================================================
+Nome do sistema         : Microsoft Windows 11 Home Single Language
+Release                 : 10
+Versão                  : 10.0.26200
+Build                   : 26200
+Arquitetura             : 64 bits
+Python                  : 3.11.9
+Último boot             : /Date(1777378685661)/
+
+==============================================================================
+COMPUTADOR
+==============================================================================
+Fabricante              : ASUSTeK COMPUTER INC.
+Modelo                  : VivoBook_ASUSLaptop X515DA_X515DA
+RAM total               : 5.95 GB
+
+==============================================================================
+PROCESSADOR
+==============================================================================
+[CPU 1]
+Nome                    : AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx
+Fabricante              : AuthenticAMD
+Núcleos                 : 4
+Threads lógicos         : 8
+Clock máximo            : 2.1 GHz
+Cache L2                : 2048 KB
+Cache L3                : 4096 KB
+Processor ID            : 178BFBFF00810F81
+
+
+==============================================================================
+PLACA(S) DE VÍDEO
+==============================================================================
+[GPU 1]
+Nome                    : AMD Radeon(TM) Vega 8 Graphics
+Processador de vídeo    : AMD Radeon Graphics Processor (0x15D8)
+VRAM estimada           : 2.0 GB
+Driver                  : 27.20.11044.5003
+Resolução atual         : 1920 x 1080
+Refresh rate            : 60 Hz
+Modo de vídeo           : 1920 x 1080 x 4294967296 cores
+Status                  : OK
+
+
+==============================================================================
+MEMÓRIA RAM
+==============================================================================
+RAM total detectada     : 5.95 GB
+
+[Módulo 1]
+Fabricante              : A-DATA Technology
+Capacidade              : 8.00 GB
+Velocidade              : 2667 MHz
+Part number             : AM1P26KC8T1-BAAS
+Slot                    : DIMM 0
+Banco                   : P0 CHANNEL B
+
+
+==============================================================================
+PLACA-MÃE
+==============================================================================
+Fabricante              : ASUSTeK COMPUTER INC.
+Produto                 : X515DA
+Serial                  : NA
+
+==============================================================================
+ARMAZENAMENTO FÍSICO
+==============================================================================
+[Disco físico 1]
+Modelo                  : SPT256L2-2IAS7G2
+Interface               : SCSI
+Tipo de mídia           : Fixed hard disk media
+Tamanho                 : 238.47 GB
+Serial                  : 213112715117264     _00000001.
+
+[Disco físico 2]
+Modelo                  : Innostor Ext. HDD USB Device
+Interface               : USB
+Tipo de mídia           : External hard disk media
+Tamanho                 : 447.13 GB
+Serial                  : 20220303
+
+[Disco físico 3]
+Modelo                  : VendorCo ProductCode USB Device
+Interface               : USB
+Tipo de mídia           : Removable Media
+Tamanho                 : 62.49 GB
+Serial                  : 8672711086977100611
+
+
+==============================================================================
+UNIDADES LÓGICAS
+==============================================================================
+[Unidade 1]
+Letra                   : C:
+Volume                  : N/D
+Sistema de arquivos     : NTFS
+Tamanho                 : 237.17 GB
+Espaço livre            : 54.66 GB
+
+[Unidade 2]
+Letra                   : E:
+Volume                  : N/D
+Sistema de arquivos     : NTFS
+Tamanho                 : 447.13 GB
+Espaço livre            : 303.62 GB
+
+
+==============================================================================
+ANÁLISE GAMER
+==============================================================================
+Tier do processador     : intermediário
+GPU principal           : AMD Radeon(TM) Vega 8 Graphics
+VRAM estimada           : 2.0 GB
+Tipo de GPU             : integrada
+RAM total               : 5.95 GB
+DirectX                 : DirectX 12
+
+Perfil geral            : casual
+Jogos que tende a rodar : eSports leves, indies, MOBAs e jogos competitivos mais otimizados
+Preset sugerido         : 720p a 1080p no baixo
+Observações             : Análise heurística; compare sempre com os requisitos do jogo desejado.
+
+Pontos fortes:
+  - processador competente para jogos em 1080p
+
+Pontos de atenção:
+  - menos de 16 GB de RAM pode limitar jogos atuais e multitarefa
+  - SSD não identificado; os carregamentos podem ser mais lentos
+  - GPU integrada tende a ser o principal gargalo em jogos pesados
+
+Upgrades prioritários:
+  - o maior salto de desempenho viria de uma placa de vídeo dedicada
+  - subir a RAM para pelo menos 16 GB pode melhorar a experiência
+  - instalar um SSD pode reduzir drasticamente tempos de carregamento
+
+==============================================================================
+ERROS DE COLETA
+==============================================================================
+Nenhum erro de coleta foi registrado.
+
+==============================================================================
+OBSERVAÇÃO TÉCNICA
+==============================================================================
+A leitura de VRAM no Windows pode ser aproximada em alguns hardwares;Para compatibilidade exata por jogo, compare também os requisitosmínimos e recomendados do título desejado.
