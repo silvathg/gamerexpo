@@ -22,7 +22,6 @@ Ajudar o usuário a responder:
 ## Tecnologias
 
 - Python
-- Streamlit
 - PowerShell / WMI / CIM
 - JSON
 - TXT
