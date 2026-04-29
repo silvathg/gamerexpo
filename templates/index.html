@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GamerExpo v1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Diagnóstico Hardware</p>
+          <h1>GamerExpo v1</h1>
+          <p class="lede">
+            Analise seu hardware, gere um relatório e veja quais jogos combinam melhor com a sua máquina!
+          </p>
+          <div class="actions">
+            <button id="startBtn" class="primary-btn" type="button">Iniciar</button>
+            <label class="file-btn">
+              Usar JSON salvo
+              <input id="jsonUpload" type="file" accept="application/json" />
+            </label>
+          </div>
+        </div>
+        <div class="signal-panel" aria-label="Resumo do produto">
+          <div class="signal-row">
+            <span>CPU</span>
+            <strong>WMI/CIM</strong>
+          </div>
+          <div class="signal-row">
+            <span>GPU</span>
+            <strong>VRAM + driver</strong>
+          </div>
+          <div class="signal-row">
+            <span>Perfil</span>
+            <strong>Preset gamer</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="progressArea" class="progress-area hidden" aria-live="polite">
+        <div class="progress-meta">
+          <span id="progressLabel">Preparando diagnóstico</span>
+          <strong id="progressPercent">0%</strong>
+        </div>
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </section>
+
+      <section id="resultArea" class="results hidden">
+        <div class="section-title">
+          <p class="eyebrow">Resultado</p>
+          <h2>Diagnóstico concluído!</h2>
+        </div>
+
+        <div class="cards">
+          <article class="info-card">
+            <span>Processador</span>
+            <strong id="cpuName">N/D</strong>
+            <small id="cpuMeta">N/D</small>
+          </article>
+          <article class="info-card">
+            <span>Placa de video</span>
+            <strong id="gpuName">N/D</strong>
+            <small id="gpuMeta">N/D</small>
+          </article>
+          <article class="info-card">
+            <span>RAM</span>
+            <strong id="ramTotal">N/D</strong>
+            <small id="ramMeta">N/D</small>
+          </article>
+          <article class="info-card">
+            <span>Armazenamento</span>
+            <strong id="storageMain">N/D</strong>
+            <small id="storageMeta">N/D</small>
+          </article>
+          <article class="info-card">
+            <span>DirectX</span>
+            <strong id="directx">N/D</strong>
+            <small>Compatibilidade grafica</small>
+          </article>
+          <article class="info-card accent">
+            <span>Perfil gamer</span>
+            <strong id="profileLevel">N/D</strong>
+            <small id="profilePreset">N/D</small>
+          </article>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-block">
+            <h3>Gargalos</h3>
+            <ul id="bottlenecks"></ul>
+          </div>
+          <div class="detail-block">
+            <h3>Upgrades sugeridos</h3>
+            <ul id="upgrades"></ul>
+          </div>
+        </div>
+
+        <div class="actions final-actions">
+          <a id="jsonDownload" class="secondary-btn" href="/api/salvar/json">Salvar em JSON</a>
+          <a id="txtDownload" class="secondary-btn" href="/api/salvar/txt">Salvar em TXT</a>
+          <button id="recommendBtn" class="primary-btn" type="button">Analisar jogos recomendados</button>
+        </div>
+      </section>
+
+      <section id="recommendArea" class="recommendations hidden">
+        <div class="section-title">
+          <p class="eyebrow">Jogos</p>
+          <h2>Recomendações para esta máquina</h2>
+        </div>
+        <div id="recommendMeta" class="recommend-meta"></div>
+        <div id="gameList" class="game-list"></div>
+      </section>
+
+      <section id="errorArea" class="error-area hidden" role="alert"></section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
+
